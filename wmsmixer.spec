@@ -67,7 +67,6 @@ EOF
 install -m 755 -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=WmsMixer
 Comment=Dockapp sound mixer adjustable with mouse wheel
 Exec=%{_bindir}/%{name} -w
