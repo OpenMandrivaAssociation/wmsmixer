@@ -13,7 +13,6 @@ BuildRequires:	libx11-devel
 BuildRequires:	libxpm-devel
 BuildRequires:	libxext-devel
 BuildRequires:	imake
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
  This is a hack to wmmixer which makes some changes to the display and adds a
