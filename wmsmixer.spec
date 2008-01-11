@@ -57,12 +57,6 @@ tar xOjf %SOURCE1 %{name}-48x48.png > %buildroot%{_liconsdir}/%{name}.png
 mkdir -p %buildroot%_bindir/
 install -m 755 %{name} %buildroot%{_bindir}/
 
-install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%{name}):command="%{_bindir}/%{name} -w" icon="%{name}.png"\\
-                 needs="X11" section="Multimedia/Sound" title="WmsMixer"\\
-                 longtitle="Dockapp sound mixer adjustable with mouse wheel" xdg="true"
-EOF
 
 install -m 755 -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
@@ -93,6 +87,5 @@ rm -rf %buildroot
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_datadir}/applications/mandriva-%{name}.desktop
-%{_menudir}/%{name}
 
 
