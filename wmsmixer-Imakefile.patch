@@ -1,0 +1,9 @@
+--- wmsmixer-0.5/Imakefile.orig.1	2002-07-03 16:05:19.000000000 +0200
++++ wmsmixer-0.5/Imakefile	2002-07-03 16:12:18.000000000 +0200
+@@ -10,4 +10,6 @@
+ SRCS = wmsmixer.cc
+ OBJS = wmsmixer.o
+ 
++CCLINK=c++
++
+ ComplexProgramTarget(wmsmixer)
