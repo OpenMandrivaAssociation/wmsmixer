@@ -93,3 +93,49 @@ rm -rf %buildroot
 %{_datadir}/applications/mandriva-%{name}.desktop
 
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.5.1-9mdv2010.0
++ Revision: 434895
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.5.1-8mdv2009.0
++ Revision: 262062
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.5.1-7mdv2009.0
++ Revision: 256259
+- rebuild
+- drop old menu
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tvignaud@mandriva.com> 0.5.1-5mdv2008.1
++ Revision: 129421
+- kill re-definition of %%buildroot on Pixel's request
+- kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+
+* Thu Mar 15 2007 Gustavo De Nardin <gustavodn@mandriva.com> 0.5.1-5mdv2007.1
++ Revision: 144253
+- bunzipped plaintext patches
+- BuildRequires imake for xmkmf for Imakefile patch
+
+* Tue Feb 06 2007 Gustavo De Nardin <gustavodn@mandriva.com> 0.5.1-4mdv2007.1
++ Revision: 116917
+- fixed XDG desktop entry Comment
+- note about mouse wheel feature in Summary
+- start withdrawn when launched from the menu
+- fixed and trimmed dependencies
+- spec cleanup
+- xdg menu migration for great compliance
+- xmkmf is no more, specifying CCLINK directly in make arg
+
+* Thu Jul 01 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.5.1-2mdk
+- rebuild with new g++
+
