@@ -1,7 +1,7 @@
 Summary:  	Dockapp sound mixer adjustable with mouse wheel
 Name:		wmsmixer
 Version:	0.5.1
-Release:	%mkrel 9
+Release:	10
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	%{name}-%{version}.tar.bz2
@@ -13,7 +13,6 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xpm)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	imake
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
  This is a hack to wmmixer which makes some changes to the display and adds a
