@@ -9,9 +9,9 @@ Source1:	%{name}-icons.tar.bz2
 Patch0:		%name.patch
 Patch1:		%name-Imakefile.patch
 URL:		http://www.hibernaculum.net/wmsmixer.html
-BuildRequires:	libx11-devel
-BuildRequires:	libxpm-devel
-BuildRequires:	libxext-devel
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xpm)
+BuildRequires:	pkgconfig(xext)
 BuildRequires:	imake
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
