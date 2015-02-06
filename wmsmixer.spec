@@ -1,7 +1,7 @@
 Summary:  	Dockapp sound mixer adjustable with mouse wheel
 Name:		wmsmixer
 Version:	0.5.1
-Release:	10
+Release:	11
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	%{name}-%{version}.tar.bz2
